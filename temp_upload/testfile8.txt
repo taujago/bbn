@@ -1,0 +1,4 @@
+nomor|nama|alamat|ini|dan|itu
+jika|ada|lagi|yang|sama|yes
+jika2|ada2|lagi2|yang2|sama2|yes2
+jika3|ada3|lagi3|yang3|sama3|yes3

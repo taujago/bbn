@@ -1,0 +1,1486 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"site_",
+				"site_url(\"home"
+			],
+			[
+				"pas",
+				"password"
+			],
+			[
+				"pass",
+				"password"
+			],
+			[
+				"passw",
+				"password"
+			],
+			[
+				"cek",
+				"ceklogin	(login.php)"
+			],
+			[
+				"id",
+				"id_user"
+			],
+			[
+				"last",
+				"last_query"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"polda",
+				"polda_leasing	(admin_lap_model.php)"
+			],
+			[
+				"pold",
+				"p.`id_polda`,`no_blokir	(admin_lap_model.php)"
+			],
+			[
+				"leas",
+				"leasing_id	(ver_model.php)"
+			],
+			[
+				"leasing",
+				"leasing_nama"
+			],
+			[
+				"order",
+				"order_by"
+			],
+			[
+				"tgl",
+				"tgl_blokir2	(polisi_verifikasi.php)"
+			],
+			[
+				"tgl_b",
+				"tgl_blokir	(polisi_verifikasi.php)"
+			],
+			[
+				"juml",
+				"jumlah_sumbu	(polisi_verifikasi.php)"
+			],
+			[
+				"jumlah",
+				"jumlah_sumbu"
+			],
+			[
+				"arr_",
+				"arr_data"
+			],
+			[
+				"arr",
+				"array	$… = array (…)"
+			],
+			[
+				"json",
+				"jsondata"
+			],
+			[
+				"surat",
+				"surat_laporan_tanggal"
+			],
+			[
+				"surat_",
+				"surat_laporan_nomor"
+			],
+			[
+				"insert",
+				"insert_id(),$data"
+			],
+			[
+				"pemili",
+				"pemilik_alamat	(polres_blokir_pidana.php)"
+			],
+			[
+				"jenis",
+				"jenis_permohonan"
+			],
+			[
+				"usr",
+				"userdata"
+			],
+			[
+				"id_po",
+				"id_polda	(login.php)"
+			],
+			[
+				"data",
+				"datadaftar"
+			],
+			[
+				"CONT",
+				"controller"
+			],
+			[
+				"tang",
+				"tanggal"
+			],
+			[
+				"t_pend",
+				"t_pendaftaran_pidana"
+			],
+			[
+				"user",
+				"userdata"
+			],
+			[
+				"tiger_",
+				"tiger_provinsi	(upmodel.php)"
+			],
+			[
+				"id_pol",
+				"id_polres	(upmodel.php)"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"da",
+				"data_daft"
+			],
+			[
+				"baru",
+				"baru_verifikasi"
+			],
+			[
+				"oncli",
+				"onclick	(baru_daftar_view.php)"
+			],
+			[
+				"file",
+				"filename"
+			],
+			[
+				"arr_status",
+				"arr_status2	(baru_laporan_view.php)"
+			],
+			[
+				"sta",
+				"status_name"
+			],
+			[
+				"per",
+				"periode"
+			],
+			[
+				"kontra",
+				"kontrak_no	(baru_verifikasi.php)"
+			],
+			[
+				"no",
+				"no_polisi	(baru_verifikasi.php)"
+			],
+			[
+				"err",
+				"err_msg"
+			],
+			[
+				"daft",
+				"daft_id"
+			],
+			[
+				"Para",
+				"ParamKind	(testlogin.php)"
+			],
+			[
+				"t_",
+				"t_user_monitoring"
+			],
+			[
+				"pol",
+				"polda_url"
+			],
+			[
+				"json_",
+				"json_data"
+			],
+			[
+				"inst",
+				"ins_data"
+			],
+			[
+				"tangg",
+				"tanggal_akhir"
+			],
+			[
+				"tangga",
+				"tanggal_awal"
+			],
+			[
+				"dft",
+				"daft_date	(master_controller.php)"
+			],
+			[
+				"ret_",
+				"ret_service"
+			],
+			[
+				"shwo_a",
+				"show_array"
+			],
+			[
+				"foo",
+				"footer_text"
+			],
+			[
+				"show_arr",
+				"show_array"
+			],
+			[
+				"ret",
+				"ret_service"
+			],
+			[
+				"lea",
+				"leasing_nama"
+			],
+			[
+				"user_p",
+				"user_password2"
+			],
+			[
+				"user_pass",
+				"user_password"
+			],
+			[
+				"user_passw",
+				"user_password"
+			],
+			[
+				"res",
+				"results"
+			],
+			[
+				"tanggal",
+				"tanggal_awal	(baru_laporan_pdf.php)"
+			],
+			[
+				"id_",
+				"id_desa"
+			],
+			[
+				"col",
+				"colname"
+			],
+			[
+				"settin",
+				"setting_desa"
+			],
+			[
+				"row",
+				"row2"
+			],
+			[
+				"ar",
+				"array"
+			],
+			[
+				"wid",
+				"width:200px"
+			],
+			[
+				"app",
+				"approved_error	(baru_verifikasi.php)"
+			],
+			[
+				"stau",
+				"status	(baru_verifikasi.php)"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"user_",
+				"user_level	(baru_verifikasi.php)"
+			],
+			[
+				"caban",
+				"cabang_nama"
+			],
+			[
+				"input",
+				"input_arr"
+			],
+			[
+				"kon",
+				"kontrak_perihal	(update-new.sql)"
+			],
+			[
+				"kontrak",
+				"kontrak_date	(baru_import.php)"
+			],
+			[
+				"daft_",
+				"daft_level2_date	(coremodel.php)"
+			],
+			[
+				"caba",
+				"cabang"
+			],
+			[
+				"hi",
+				"highestColumn"
+			],
+			[
+				"hig",
+				"highestColumn"
+			],
+			[
+				"up",
+				"upload_data"
+			],
+			[
+				"req",
+				"req_url"
+			],
+			[
+				"u",
+				"userdata"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"html",
+				"htmldata"
+			],
+			[
+				"servi",
+				"service_user	(lp_model.php)"
+			],
+			[
+				"nama_p",
+				"nama_polda"
+			],
+			[
+				"nama_polda",
+				"nama_polda_singkatan"
+			],
+			[
+				"nama_po",
+				"nama_polda_singkatan"
+			],
+			[
+				"leasi",
+				"leasing_alamat"
+			],
+			[
+				"leasin",
+				"leasing_id"
+			],
+			[
+				"cabang",
+				"cabang_id"
+			],
+			[
+				"getdeta",
+				"get_detail_pendaftaran"
+			],
+			[
+				"ca",
+				"cabang_id"
+			],
+			[
+				"tgl_blo",
+				"tgl_blokir"
+			],
+			[
+				"fo",
+				"font-size"
+			],
+			[
+				"tahun",
+				"tahun_anggaran"
+			],
+			[
+				"kegiatan",
+				"kegiatan_detail"
+			],
+			[
+				"DAFT",
+				"DAFT_ID"
+			],
+			[
+				"BLOKIR",
+				"BLOKIR_DATE"
+			],
+			[
+				"T_BLO",
+				"T_BLOKIR_LANGSUNG"
+			],
+			[
+				"ALAMA",
+				"ALAMAT_PENGAJUAN_LEASING"
+			],
+			[
+				"NAMA_PE",
+				"NAMA_PENGAJUAN_LEASING"
+			],
+			[
+				"end",
+				"endforeach"
+			],
+			[
+				"id_bela",
+				"id_belanja_rincian"
+			],
+			[
+				"jm",
+				"jml_x_rincian"
+			],
+			[
+				"id_be",
+				"id_belanja"
+			],
+			[
+				"exp",
+				"explode"
+			],
+			[
+				"new",
+				"new_id"
+			],
+			[
+				"has",
+				"has_child"
+			],
+			[
+				"detail",
+				"detail_rekening"
+			],
+			[
+				"num",
+				"num_rows"
+			],
+			[
+				"akun",
+				"akun_program"
+			],
+			[
+				"ord",
+				"order_by"
+			],
+			[
+				"li",
+				"link	Tag"
+			],
+			[
+				"LEPAS_DA",
+				"LEPAS_DAFT_BY"
+			],
+			[
+				"LEAS",
+				"LEASING_ID"
+			],
+			[
+				"USER",
+				"USER_LEVEL"
+			],
+			[
+				"BPKB",
+				"BPKB_ID"
+			],
+			[
+				"BPKB_",
+				"BPKB_STATUS"
+			],
+			[
+				"BLOKI",
+				"BLOKIR_STATUS"
+			],
+			[
+				"qu",
+				"query"
+			],
+			[
+				"MERK",
+				"MERK_NAMA"
+			],
+			[
+				"salah",
+				"salah_modal"
+			],
+			[
+				"bena",
+				"benar_modal"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "application/views/index_view.php",
+			"settings":
+			{
+				"buffer_size": 4391,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/modules/__sampah/admin_laporan/views/admin_laporan_view_js.php",
+			"settings":
+			{
+				"buffer_size": 11174,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/controllers/home.php",
+			"settings":
+			{
+				"buffer_size": 249,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/modules/cek_bbn/controllers/cek_bbn.php",
+			"settings":
+			{
+				"buffer_size": 1202,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/modules/cek_bbn/views/cek_bbn_view_js.php",
+			"settings":
+			{
+				"buffer_size": 387,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 247.0,
+		"last_filter": "install",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 593.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/firman/htdocs/bbn",
+		"/Users/firman/htdocs/bbn/application",
+		"/Users/firman/htdocs/bbn/application/controllers",
+		"/Users/firman/htdocs/bbn/application/models",
+		"/Users/firman/htdocs/bbn/application/modules",
+		"/Users/firman/htdocs/bbn/application/modules/__sampah",
+		"/Users/firman/htdocs/bbn/application/modules/__sampah/admin_laporan",
+		"/Users/firman/htdocs/bbn/application/modules/__sampah/admin_laporan/controllers",
+		"/Users/firman/htdocs/bbn/application/modules/__sampah/admin_laporan/views",
+		"/Users/firman/htdocs/bbn/application/modules/__sampah/admin_verifikasi",
+		"/Users/firman/htdocs/bbn/application/modules/__sampah/admin_verifikasi/controllers",
+		"/Users/firman/htdocs/bbn/application/modules/__sampah/baru_cek",
+		"/Users/firman/htdocs/bbn/application/modules/__sampah/baru_cek/controllers",
+		"/Users/firman/htdocs/bbn/application/modules/__sampah/baru_cek/views",
+		"/Users/firman/htdocs/bbn/application/modules/__sampah/baru_daftar",
+		"/Users/firman/htdocs/bbn/application/modules/__sampah/baru_daftar/controllers",
+		"/Users/firman/htdocs/bbn/application/modules/__sampah/baru_verifikasi",
+		"/Users/firman/htdocs/bbn/application/modules/__sampah/baru_verifikasi/views",
+		"/Users/firman/htdocs/bbn/application/modules/__sampah/laporan",
+		"/Users/firman/htdocs/bbn/application/modules/__sampah/laporan/controllers",
+		"/Users/firman/htdocs/bbn/application/modules/__sampah/pilih",
+		"/Users/firman/htdocs/bbn/application/modules/__sampah/pilih_polda",
+		"/Users/firman/htdocs/bbn/application/modules/__sampah/polisi_blokir_perleasing",
+		"/Users/firman/htdocs/bbn/application/modules/__sampah/polisi_verifikasi",
+		"/Users/firman/htdocs/bbn/application/modules/__sampah/polisi_verifikasi/views",
+		"/Users/firman/htdocs/bbn/application/modules/cek_bbn",
+		"/Users/firman/htdocs/bbn/application/modules/cek_bbn/controllers",
+		"/Users/firman/htdocs/bbn/application/modules/cek_bbn/views",
+		"/Users/firman/htdocs/bbn/application/modules/login/controllers",
+		"/Users/firman/htdocs/bbn/application/modules/login/views",
+		"/Users/firman/htdocs/bbn/application/views",
+		"/Users/firman/htdocs/bbn/assets/css",
+		"/Users/firman/htdocs/bbn/assets/img",
+		"/Users/firman/htdocs/bbn/assets/img/backgrounds",
+		"/Users/firman/htdocs/bbn/assets/js"
+	],
+	"file_history":
+	[
+		"/Users/firman/htdocs/bbn/application/modules/__sampah/baru_cek/controllers/baru_cek.php",
+		"/Users/firman/htdocs/bbn/application/modules/__sampah/baru_cek/views/baru_cek_view.php",
+		"/Users/firman/htdocs/bbn/application/modules/__sampah/admin_verifikasi/controllers/admin_verifikasi.php",
+		"/Users/firman/htdocs/bbn/application/modules/__sampah/pilih/views/pilih_view.php",
+		"/Users/firman/htdocs/bbn/application/modules/cek_bbn/views/cek_bbn_view.php",
+		"/Users/firman/htdocs/bbn/application/modules/__sampah/admin_laporan/controllers/admin_laporan.php",
+		"/Users/firman/htdocs/bbn/index.php",
+		"/Users/firman/htdocs/bbn/application/models/coremodel.php",
+		"/Users/firman/htdocs/bbn/application/views/template_polres.php",
+		"/Users/firman/htdocs/bbn/assets/css/sticky-footer.css",
+		"/Users/firman/htdocs/bbn/application/modules/login/views/login_view.php",
+		"/Users/firman/htdocs/bbn/application/modules/login/views/login_view_js.php",
+		"/Users/firman/htdocs/bbn/application/modules/login/controllers/login.php",
+		"/Users/firman/htdocs/bbn/application/libraries/master_controller.php",
+		"/Users/firman/htdocs/bbn/assets/css/style.css",
+		"/Users/firman/htdocs/bbn/application/controllers/home.php",
+		"/Users/firman/htdocs/bbn/application/config/routes.php",
+		"/Users/firman/htdocs/bbn/application/config/autoload.php",
+		"/Users/firman/htdocs/bbn/application/libraries/Mailman.php",
+		"/Users/firman/htdocs/bbn/application/config/database.php",
+		"/Users/firman/htdocs/bbn/application/modules/__sampah/baru_verifikasi/views/baru_verifikasi_view_js.php",
+		"/Users/firman/htdocs/bbn/application/modules/__sampah/polisi_verifikasi/views/polisi_verifikasi_view_js.php",
+		"/Users/firman/htdocs/bbn/application/views/template_polisi.php",
+		"/Users/firman/htdocs/bbn/application/modules/__sampah/baru_daftar/controllers/baru_daftar.php",
+		"/Users/firman/htdocs/bbn/application/modules/__sampah/laporan/controllers/laporan.php",
+		"/Users/firman/htdocs/bbn/assets/js/scripts.js",
+		"/Users/firman/htdocs/bbn/application/views/template_baru.php",
+		"/Users/firman/htdocs/bbn/application/modules/__sampah/admin_laporan/views/admin_laporan_view_js.php",
+		"/Users/firman/htdocs/bbn/assets/css/form-elements.css",
+		"/Users/firman/htdocs/bpkbservice/application/modules/polisi_blokir_perleasing/models/pbpl_model.php",
+		"/Users/firman/htdocs/bpkbservice/application/modules/polisi_blokir_perleasing/controllers/polisi_blokir_perleasing.php",
+		"/Users/firman/htdocs/bpkbservice/application/modules/polisi_blokir_perleasing/views/polisi_blokir_perleasing_view_js.php",
+		"/Users/firman/htdocs/bpkbservice/application/modules/polisi_verifikasi/controllers/polisi_verifikasi.php",
+		"/Users/firman/htdocs/bpkbservice/application/modules/baru_verifikasi/controllers/baru_verifikasi.php",
+		"/Users/firman/htdocs/bpkbservice/application/modules/baru_daftar/controllers/baru_daftar.php",
+		"/Users/firman/htdocs/bpkbservice/index.php",
+		"/Users/firman/htdocs/bpkbservice/application/models/coremodel.php",
+		"/Users/firman/htdocs/bpkbservice/application/modules/baru_cek/controllers/baru_cek.php",
+		"/Users/firman/htdocs/bpkbservice/application/modules/baru_import/controllers/baru_import.php",
+		"/Users/firman/htdocs/bpkbservice/application/modules/admin_laporan/models/admin_lap_model.php",
+		"/Users/firman/htdocs/bpkbservice/application/modules/admin_laporan/controllers/admin_laporan.php",
+		"/Users/firman/htdocs/bpkbservice/application/modules/admin_laporan/views/admin_laporan_view_js.php",
+		"/Users/firman/htdocs/bpkbservice/application/modules/admin_laporan/views/admin_laporan_view.php",
+		"/Users/firman/htdocs/bpkbservice/application/modules/polisi_verifikasi/models/ver_model.php",
+		"/Users/firman/htdocs/bpkbservice/application/modules/baru_daftar/models/bd_model.php",
+		"/Users/firman/htdocs/bpkbservice/application/modules/baru_verifikasi/models/ver_model.php",
+		"/Users/firman/htdocs/bpkbservice/application/index.html",
+		"/Users/firman/htdocs/bpkbservice/application/modules/baru_bukablokir/controllers/baru_bukablokir.php",
+		"/Users/firman/htdocs/bpkbservice/application/libraries/master_controller.php",
+		"/Users/firman/htdocs/bpkbservice/application/helpers/tanggal_helper.php",
+		"/Users/firman/htdocs/bpkbservice/application/modules/polisi_verifikasi/views/polisi_verifikasi_view_detail.php",
+		"/Users/firman/htdocs/bpkbservice/application/modules/baru_bukablokir/views/baru_bukablokir_view_js.php",
+		"/Users/firman/htdocs/bpkbservice/application/modules/baru_verifikasi/views/baru_verifikasi_view_detail.php",
+		"/Users/firman/htdocs/bpkbservice/application/modules/polisi_verifikasi/views/polisi_verifikasi_view_js.php",
+		"/Users/firman/htdocs/bpkbservice/application/modules/baru_verifikasi/views/baru_verifikasi_view_js.php",
+		"/Users/firman/htdocs/bpkbservice/application/views/template_baru.php",
+		"/Users/firman/htdocs/bpkbservice/application/modules/baru_daftar/views/lama_daftar_form_edit_js.php",
+		"/Users/firman/htdocs/bpkbservice/application/modules/baru_daftar/views/lama_daftar_form_js.php",
+		"/Users/firman/htdocs/bpkbservice/application/modules/baru_daftar/views/baru_daftar_form_js.php",
+		"/Users/firman/htdocs/bpkbservice/application/modules/baru_daftar/views/baru_daftar_form.php",
+		"/Users/firman/htdocs/bpkbservice/application/config/database.php",
+		"/Users/firman/htdocs/bpkbservice/application/config/autoload.php",
+		"/Users/firman/htdocs/bpkbservice/application/libraries/Excel.php",
+		"/Users/firman/htdocs/bpkbservice/application/libraries/Excel_reader.php",
+		"/Users/firman/htdocs/bpkbservice/application/modules/baru_import/views/baru_import_view_js.php",
+		"/Users/firman/htdocs/bpkbservice/application/modules/baru_import/views/baru_import_list_view.php",
+		"/Users/firman/htdocs/bpkbservice/application/modules/polres_blokir_pidana/controllers/polres_blokir_pidana.php",
+		"/Users/firman/htdocs/bpkbservice/application/modules/polisi_blokir_pidana/controllers/polisi_blokir_pidana.php",
+		"/Users/firman/htdocs/bpkbservice/application/controllers/testlogin.php",
+		"/Users/firman/htdocs/bpkbservice/application/libraries/PHPExcel.php",
+		"/Users/firman/htdocs/bpkbservice/application/modules/polisi_verifikasi/views/pdf/surat.php",
+		"/Users/firman/htdocs/bpkbservice/application/modules/polres_blokir_pidana/views/polres_blokir_pidana_form_js.php",
+		"/Users/firman/Downloads/jrs-rest-php-client-2.0.0/README.md",
+		"/Users/firman/htdocs/bpkbservice/application/modules/polisi_blokir_pidana/views/polisi_blokir_pidana_form_js.php",
+		"/Users/firman/htdocs/bpkbservice/application/modules/polisi_verifikasi/views/polisi_verifikasi_view.php",
+		"/Users/firman/htdocs/bpkbservice/application/views/template_polisi.php",
+		"/Users/firman/htdocs/bpkbservice/application/views/template_polres.php",
+		"/Users/firman/htdocs/blokirjabar/model/blokir_model.php",
+		"/Users/firman/htdocs/blokirjabar/db/config.inc.php",
+		"/Users/firman/htdocs/blokirjabar/model/appmodelservice.php",
+		"/Users/firman/htdocs/blokirjabar/model/.blokir_model.php.swp",
+		"/Users/firman/htdocs/bpkbservice/application/modules/baru_bukablokir/models/buka_model.php",
+		"/Users/firman/htdocs/bpkbservice/application/modules/baru_bukablokir/views/baru_bukablokir_view.php",
+		"/Users/firman/htdocs/bpkbservice/application/modules/polres_blokir_pidana/models/b_pidana_model.php",
+		"/Users/firman/htdocs/bpkbservice/application/modules/login/controllers/login.php",
+		"/Users/firman/htdocs/bpkbservice/application/modules/polres_blokir_pidana/views/polres_blokir_pidana_form.php",
+		"/Users/firman/htdocs/bpkbservice/application/modules/baru_daftar/views/baru_daftar_form_edit_js.php",
+		"/Users/firman/htdocs/bpkbservice/application/modules/polisi_blokir_pidana/views/polisi_blokir_pidana_detail.php",
+		"/Users/firman/htdocs/bpkbservice/application/modules/polisi_blokir_pidana/models/polisi_blokir_pidana_model.php",
+		"/Users/firman/htdocs/bpkbservice/application/modules/polisi_blokir_pidana/views/polisi_blokir_pidana_view_js.php",
+		"/Users/firman/htdocs/bpkbservice/application/modules/polisi_bolkir_pidana/controllers/polisi_bolkir_pidana.php",
+		"/Users/firman/htdocs/bpkbservice/application/modules/polisi_bolkir_pidana/models/polisi_blokir_pidana_model.php",
+		"/Users/firman/htdocs/bpkbservice/application/modules/polres_blokir_pidana/views/polres_blokir_pidana_view.php",
+		"/Users/firman/htdocs/bpkbservice/application/modules/polres_blokir_pidana/views/polres_blokir_pidana_view_js.php",
+		"/Users/firman/htdocs/bpkbservice/application/modules/baru_daftar/views/baru_daftar_view_js.php",
+		"/Users/firman/htdocs/bpkbservice/application/modules/pilih/controllers/pilih.php",
+		"/Users/firman/htdocs/bpkbservice/application/modules/login/views/login_view.php",
+		"/Users/firman/htdocs/bpkbservice/application/modules/polres_depan/views/polres_depan_view.php",
+		"/Users/firman/htdocs/bpkbservice/application/modules/verifikatur/controllers/verifikatur.php",
+		"/Users/firman/htdocs/bpkbservice/application/modules/user_polres/models/upmodel.php",
+		"/Users/firman/htdocs/bpkbservice/application/modules/user_polres/views/user_polres_view.php",
+		"/Users/firman/htdocs/bpkbservice/application/modules/user_polres/views/user_polres_view_form.php",
+		"/Users/firman/htdocs/bpkbservice/application/modules/user_polres/views/user_polres_view_form_js.php",
+		"/Users/firman/htdocs/bpkbservice/application/modules/polres_depan/controllers/polres_depan.php",
+		"/Users/firman/htdocs/bpkbservice/application/views/template.php",
+		"/Users/firman/htdocs/bpkbservice/application/controllers/general.php",
+		"/Users/firman/htdocs/bpkbservice/application/modules/user_polres/controllers/user_polres.php",
+		"/Users/firman/htdocs/servicetester/application/modules/baru_cek/controllers/baru_cek.php",
+		"/Users/firman/htdocs/servicetester/application/modules/baru_cek/views/baru_cek_view.php",
+		"/Users/firman/htdocs/bpkbservice/browsj_doc.html",
+		"/Users/firman/htdocs/servicetester/application/controllers/testlogin.php",
+		"/Users/firman/htdocs/bpkbservice/application/modules/admin_verifikasi/views/admin_verifikasi_view_js.php",
+		"/Users/firman/htdocs/bpkbservice/application/modules/admin_verifikasi/controllers/admin_verifikasi.php",
+		"/Users/firman/htdocs/bpkbservice/application/modules/admin_verifikasi/models/ver_model.php",
+		"/Users/firman/htdocs/bpkbservice/application/modules/admin_verifikasi/models/ver_model.backup.php",
+		"/Users/firman/htdocs/bpkbservice/application/modules/admin_verifikasi/views/admin_verifikasi_view.php",
+		"/Users/firman/htdocs/bpkbservice/application/modules/baru_cek/views/baru_cek_view_detail.php",
+		"/Users/firman/htdocs/bpkbservice/application/modules/depan_baru/models/stat_model.php",
+		"/Users/firman/htdocs/bpkbservice/application/modules/baru_verifikasi/views/baru_verifikasi_view.php",
+		"/Users/firman/htdocs/bpkbservice/application/modules/baru_daftar/views/baru_daftar_view.php",
+		"/Users/firman/htdocs/bpkbservice/application/modules/baru_verifikasi/views/error.php",
+		"/Users/firman/htdocs/bpkbservice/application/modules/depan_baru/controllers/depan_baru.php",
+		"/Users/firman/htdocs/bpkbservice/application/modules/baru_laporan/models/lapmodel.php",
+		"/Users/firman/htdocs/bpkbservice/application/modules/baru_laporan/views/baru_laporan_view_js.php",
+		"/Users/firman/htdocs/bpkbservice/application/modules/baru_laporan/views/baru_laporan_view.php",
+		"/Users/firman/htdocs/bpkbservice/application/modules/baru_laporan/controllers/baru_laporan.php",
+		"/Users/firman/htdocs/bpkbservice/application/modules/baru_bukablokir/views/baru_bukablokir_list_view_js.php",
+		"/Users/firman/htdocs/servicetester/index.php"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"user_id",
+			"mailpath",
+			"cek_email",
+			"form-last-name",
+			"orm-about-yourself",
+			"form-first-name",
+			"form-email",
+			"background",
+			"back",
+			"assets",
+			"VERIFIKASI PENDAFTARAN BLOKIR KENDARAAN LAMA",
+			"polisi_verifikasi",
+			"verivikasi3",
+			" dt\n				 .columns(i).search(v)				 \n				 .column(1).search($(\"#jenis_permohonan\").val())\n				 .column(2).search($(\"#id_polda\").val())\n				 .column(3).search($(\"#leasing_id\").val())\n				 .column(4).search(tanggal_awal)\n				 .column(6).search(tanggal_akhir)\n				 .column(7).search(status)\n				 .draw();",
+			"jenis_permohonan",
+			"baru_verifikasi",
+			"ver_model",
+			"baru_verifikasi",
+			"IF((p.approved=0 and approved_error = 0 ), 'TUNGGU BLOKIR', \n   if((p.approved=0 and approved_error = 1),'TUNGGU BLOKIR',\n   if((p.approved=0 and approved_error = 2),'BATAL BLOKIR (BPKB sudah diblokir)',\n   if((p.approved=0 and approved_error = 3),'BATAL BLOKIR (KENDARAAN SUDAH JADI BPKB)',\n   if((p.approved=0 and approved_error = 4),'BPKB SUDAH TERBIT DAN SUDAH TIDAK AKTIF',\n   \n   IF(p.approved=1, 'BLOKIR BPKB', '-'))))) ) AS approved2,",
+			"IF((p.approved=0 and approved_error = 0 ), 'TUNGGU BLOKIR', \n   if((p.approved=0 and approved_error = 1),'TUNGGU BLOKIR',\n   if((p.approved=0 and approved_error = 2),'BATAL BLOKIR (BPKB sudah diblokir)',\n   if((p.approved=0 and approved_error = 3),'BATAL BLOKIR (KENDARAAN SUDAH JADI BPKB)',\n   IF(p.approved=1, 'BLOKIR BPKB',IF(p.approved=2, 'CEK ABSAH POLISI, NOMOR RANGKA TIDAK DITEMUKAN',   '-')))))) AS approved2,",
+			"BATAL BLOKIR (NOMOR RANGKA SUDAH ADA)",
+			"NOMOR RANGKA SUDAH ADA",
+			"BATAL BLOKIR (NOMOR RANGKA SUDAH ADA)",
+			"SUDAK",
+			"BATAL BLOKIR (NOMOR RANGKA SUDAH ADA)",
+			"SUDAK",
+			"BATAL BLOKIR (NOMOR RANGKA SUDAH ADA)",
+			"alamat",
+			"BootstrapDialog",
+			";\n",
+			"status",
+			"appro",
+			"approved",
+			"t",
+			"generate_qrcode",
+			"RanMaGetDataRanmor",
+			"obj",
+			"wait",
+			"pol.",
+			"		\n",
+			"halo",
+			"verifikasi",
+			"data polda",
+			"baru_verifikasi",
+			"btn_ca",
+			"ComplGetBpkbEntriesByTglBpkb",
+			"auth_us",
+			"Update",
+			"exit",
+			"reset",
+			"tgl_blokir",
+			"t_buku_kas",
+			"		\n",
+			"arr",
+			"show_array",
+			"();",
+			"	\n",
+			"ver_model",
+			"vermodl",
+			"echo",
+			"cabang",
+			"Pemohon",
+			"cabang",
+			"\n            if($data['cells'][$i][1] == '') break;\n                            $dataexcel[$i-1]['nama'] = $data['cells'][$i][1];\n                            $dataexcel[$i-1]['alamat'] = $data['cells'][$i][2];",
+			"blog",
+			"bog",
+			"flipdate",
+			"scrip",
+			"jenis_blokir",
+			"pidan",
+			"DBNOPOL.T_NOPOL_HSERI",
+			"TGL",
+			"nama_pemilik",
+			"get_chil",
+			"rincian_id",
+			"dlg_rincian",
+			"add_rincian()",
+			"NO_BPK",
+			"VERIFIKASI_DATE2",
+			"message",
+			"			\n",
+			"daft",
+			"echo",
+			",",
+			"v_is_car",
+			"leasing_delete",
+			"print_r",
+			"/>\"",
+			"Visual8"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"polres_depan",
+			"admin_verifikasi",
+			"temp",
+			"=>"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "application/views/index_view.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4391,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2193,
+								2193
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 476.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "application/modules/__sampah/admin_laporan/views/admin_laporan_view_js.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11174,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								122,
+								93
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "application/controllers/home.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 249,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								249,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "application/modules/cek_bbn/controllers/cek_bbn.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1202,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								868,
+								868
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 329.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "application/modules/cek_bbn/views/cek_bbn_view_js.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 387,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								255,
+								255
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "bbn.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"index",
+				"index.php"
+			],
+			[
+				"route",
+				"application/config/routes.php"
+			],
+			[
+				"autolo",
+				"application/config/autoload.php"
+			],
+			[
+				"stick",
+				"assets/css/sticky-footer.css"
+			],
+			[
+				"database",
+				"application/config/database.php"
+			],
+			[
+				"baruver",
+				"application/modules/baru_verifikasi/controllers/baru_verifikasi.php"
+			],
+			[
+				"coremod",
+				"application/models/coremodel.php"
+			],
+			[
+				"polisive",
+				"application/modules/polisi_verifikasi/controllers/polisi_verifikasi.php"
+			],
+			[
+				"polisiver",
+				"application/modules/polisi_verifikasi/controllers/polisi_verifikasi.php"
+			],
+			[
+				"polisi",
+				"application/modules/polisi_verifikasi/controllers/polisi_verifikasi.php"
+			],
+			[
+				"coremo",
+				"application/models/coremodel.php"
+			],
+			[
+				"baruvaeri",
+				"application/modules/baru_verifikasi/controllers/baru_verifikasi.php"
+			],
+			[
+				"tanggal",
+				"application/helpers/tanggal_helper.php"
+			],
+			[
+				"master",
+				"application/libraries/master_controller.php"
+			],
+			[
+				"masterco",
+				"application/libraries/master_controller.php"
+			],
+			[
+				"baruveri",
+				"application/modules/baru_verifikasi/controllers/baru_verifikasi.php"
+			],
+			[
+				"barubukabl",
+				"application/modules/baru_bukablokir/controllers/baru_bukablokir.php"
+			],
+			[
+				"bukabloki",
+				"application/modules/baru_bukablokir/controllers/baru_bukablokir.php"
+			],
+			[
+				"baruverfi",
+				"application/modules/baru_verifikasi/views/baru_verifikasi_view_js.php"
+			],
+			[
+				"barudaf",
+				"application/modules/baru_daftar/views/baru_daftar_form.php"
+			],
+			[
+				"baruverifi",
+				"application/modules/baru_verifikasi/controllers/baru_verifikasi.php"
+			],
+			[
+				"polisibloki",
+				"application/modules/polisi_blokir_pidana/controllers/polisi_blokir_pidana.php"
+			],
+			[
+				"polsiiver",
+				"application/modules/polisi_verifikasi/controllers/polisi_verifikasi.php"
+			],
+			[
+				"barucek",
+				"application/modules/baru_cek/controllers/baru_cek.php"
+			],
+			[
+				"baru_verisi",
+				"bpkbservice/application/modules/baru_verifikasi/controllers/baru_verifikasi.php"
+			],
+			[
+				"baru_daftara",
+				"bpkbservice/application/modules/baru_daftar/controllers/baru_daftar.php"
+			],
+			[
+				"login",
+				"bpkbservice/application/modules/login/controllers/login.php"
+			],
+			[
+				"verfii",
+				"bpkbservice/application/modules/verifikatur/controllers/verifikatur.php"
+			],
+			[
+				"login.php",
+				"bpkbservice/application/modules/login/controllers/login.php"
+			],
+			[
+				"baru_ver",
+				"bpkbservice/application/modules/baru_verifikasi/controllers/baru_verifikasi.php"
+			],
+			[
+				"brow",
+				"bpkbservice/browsj_doc.html"
+			],
+			[
+				"inde",
+				"bpkbservice/index.php"
+			],
+			[
+				"core",
+				"bpkbservice/application/models/coremodel.php"
+			],
+			[
+				"baru_cek",
+				"servicetester/application/modules/baru_cek/controllers/baru_cek.php"
+			],
+			[
+				"addmode",
+				"servicetester/application/modules/blokir/models/daftar_model.php"
+			],
+			[
+				"vermod",
+				"application/modules/baru_verifikasi/models/ver_model.php"
+			],
+			[
+				"baru_veri",
+				"application/modules/baru_verifikasi/controllers/baru_verifikasi.php"
+			],
+			[
+				"baruve",
+				"bpkbservice/application/modules/baru_verifikasi/controllers/baru_verifikasi.php"
+			],
+			[
+				"verifi",
+				"bpkbservice/application/modules/verifikasi/controllers/verifikasi.php"
+			],
+			[
+				"mas",
+				"bpkbservice/application/libraries/master_controller.php"
+			],
+			[
+				"autol",
+				"application/config/autoload.php"
+			],
+			[
+				"data",
+				"application/config/database.php"
+			],
+			[
+				"baru_daftar_vi",
+				"application/modules/baru_daftar/views/baru_daftar_view.php"
+			],
+			[
+				"baruimpo",
+				"application/modules/baru_import/controllers/baru_import.php"
+			],
+			[
+				"pilih",
+				"application/modules/pilih/controllers/pilih.php"
+			],
+			[
+				"depanbaru",
+				"application/controllers/depan_baru.php"
+			],
+			[
+				"testlog",
+				"application/controllers/testlogin.php"
+			],
+			[
+				"syn",
+				"application/modules/sync/controllers/sync.php"
+			],
+			[
+				"eblo",
+				"assets/css/eblokir.css"
+			],
+			[
+				"eblok",
+				"assets/css/eblokir.css"
+			],
+			[
+				"addmo",
+				"application/models/add_model.php"
+			],
+			[
+				"baruimp",
+				"application/modules/baru_import/controllers/baru_import.php"
+			],
+			[
+				"update",
+				"update-new.sql"
+			],
+			[
+				"upd",
+				"update-new.sql"
+			],
+			[
+				"mater",
+				"application/libraries/master_controller.php"
+			],
+			[
+				"register_view",
+				"application/modules/register/views/register_view_js.php"
+			],
+			[
+				"matercon",
+				"application/libraries/master_controller.php"
+			],
+			[
+				"eblokir",
+				"assets/css/eblokir.css"
+			],
+			[
+				"cetak",
+				"application/modules/cetak_apbdes/controllers/cetak_apbdes.php"
+			],
+			[
+				"kegiatna",
+				"application/modules/kegiatan_detail/controllers/kegiatan_detail.php"
+			],
+			[
+				"cetak_apbde",
+				"application/modules/cetak_apbdes/controllers/cetak_apbdes.php"
+			],
+			[
+				"cam.",
+				"application/modules/cetak_apbdes/models/cam.php"
+			],
+			[
+				"leasing",
+				"application/modules/leasing/controllers/leasing.php"
+			],
+			[
+				"coremodel",
+				"leasing/application/models/coremodel.php"
+			],
+			[
+				"blokir.php",
+				"application/modules/blokir/controllers/blokir.php"
+			],
+			[
+				"lepasviewjs",
+				"application/modules/blokir/views/lepas/lepas_view_js.php"
+			],
+			[
+				"laporan",
+				"application/modules/laporan/controllers/laporan.php"
+			],
+			[
+				"bukab",
+				"application/modules/buka_blokir/controllers/buka_blokir.php"
+			],
+			[
+				"verifikasi_viewjs",
+				"application/modules/verifikasi/views/verifikasi_view_js.php"
+			],
+			[
+				"add",
+				"application/models/add_model.php"
+			],
+			[
+				"aruskaspem",
+				"application/modules/aruskas_pembiayaan/controllers/aruskas_pembiayaan.php"
+			],
+			[
+				"pembi",
+				"application/modules/pembiayaan/controllers/pembiayaan.php"
+			],
+			[
+				"pendapatan",
+				"application/modules/pendapatan/controllers/pendapatan.php"
+			],
+			[
+				"belanjaformeditjs",
+				"application/modules/belanja/views/belanja_form_edit_js.php"
+			],
+			[
+				"akun_pend",
+				"application/modules/akun_pendapatan/controllers/akun_pendapatan.php"
+			],
+			[
+				"addm",
+				"application/models/add_model.php"
+			],
+			[
+				"template",
+				"application/views/template.php"
+			],
+			[
+				"mastercon",
+				"application/libraries/master_controller.php"
+			],
+			[
+				"blokirmo",
+				"application/modules/blokir_bpkb/models/blokir_model.php"
+			],
+			[
+				"grant",
+				"leasing/grants.sql"
+			],
+			[
+				"blokirjs",
+				"leasing/application/modules/blokir_bpkb/views/blokir_bpkb_view_js.php"
+			],
+			[
+				"lepas_daf",
+				"leasingservice.d/modul/lepas_daftar.php"
+			],
+			[
+				"daftar_model",
+				"leasing/application/modules/blokir/models/daftar_model.php"
+			],
+			[
+				"lepas_j",
+				"leasing/application/modules/blokir/views/lepas/lepas_view_js.php"
+			],
+			[
+				"bloki",
+				"leasing/application/modules/blokir/controllers/blokir.php"
+			],
+			[
+				"info",
+				"leasing/application/modules/info/controllers/info.php"
+			],
+			[
+				"user_leasingjs",
+				"leasing/application/modules/user_leasing/views/user_leasing_view_form_js.php"
+			],
+			[
+				"tempalte",
+				"leasing/application/views/template.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/htdocs/cekfisik/eblokir.sublime-project"
+			],
+			[
+				"eb",
+				"~/htdocs/cekfisik/eblokir.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 267.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

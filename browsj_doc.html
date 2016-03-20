@@ -1,0 +1,658 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Blokir Request Online Web Service (JSON)</title>
+<style type="text/css">
+
+body{
+	font:.875em/1.35 'Segoe UI','Lucida Grande',Verdana,Arial,Helvetica,sans-serif;
+}
+h1{
+	color:#707070;font:100 2.571em/1.167 'Segoe UI Light','Segoe UI','Lucida Grande',Verdana,Arial,Helvetica,sans-serif;margin-top:0;
+}
+pre,code {font-family:Consolas,Courier,monospace!important;font-style:normal;font-weight:normal;overflow:auto;word-wrap:normal;font-size:small;
+}
+pre{padding:5px;margin:0;color:#336699;}
+code{color:#993300}
+a.active:link, a.active:hover,a.active:visited, a.active:active{color:#2a2a2a;}
+h1, hr {color: #FF6666; }
+h1, h2 {font-weight:normal}
+.comment {color: #009966; font-style:italic;}
+
+</style>
+</head>
+<body>
+<table border="0" cellpadding="2" cellspacing="0">
+<tr valign="top">
+  <td colspan="3"><h1 class="title">Fungsi-Fungsi Umum</h1>
+    <a href="#fn_SignIn">SignIn</a>, <a href="#fn_SignOut">SignOut</a></td>
+</tr>
+<tr valign="top">
+  <td colspan="3"><hr noshade="noshade" size="1" color="#FF6666"/><a name="fn_SignIn"></a><h2>fungsi SignIn()</h2></td>
+</tr>
+<tr valign="top">
+	<td>Kegunaan</td>
+	<td>:</td>
+	<td>Mengawali sesi transaksi data dengan autentikasi user dan mendapatkan Session ID</tr>
+<tr valign="top">
+	<td nowrap="nowrap">PathInfo</td>
+	<td>:</td>
+	<td><code>/SignIn</code></p>
+</tr>
+<tr valign="top">
+	<td nowrap="nowrap">Request Method</td>
+ 	<td>:</td>
+	<td><code>POST</code></td>
+</tr>
+<tr valign="top">
+	<td nowrap="nowrap">Request Content Type</td>
+	<td>:</td>
+	<td><code>application/json</code></td>
+</tr>
+<tr valign="top">
+	<td nowrap="nowrap">Request String</td>
+  	<td>:</td>
+	<td><pre>{
+  &quot;LoginInfo&quot;:
+  {
+    &quot;LoginName&quot;:&lt;string&gt;,
+    &quot;Salt&quot;:&lt;string&gt;,
+    &quot;AuthHash&quot;:&lt;string&gt;
+  }
+}</pre>
+  <p><strong>Keterangan:</strong><br />
+    <code>Salt</code>: Random string, length 10 - 12 chars<br />
+    <code>AuthHash</code>: Hash autentikasi yand didapatkan dengan fungsi dan parameter:<br />
+    <strong>MD5</strong>(Salt + <strong>MD5</strong>(LoginName + Password))</p>
+  <p><strong>Contoh:</strong></p>
+  <pre>LoginName = &quot;user&quot;; Password = &quot;password&quot;; Salt = &quot;56Yh02gF882s&quot;;
+
+AuthHash = MD5(&quot;56Yh02gF882s&quot; + MD5(&quot;user&quot; + &quot;password&quot;);
+         = MD5(&quot;56Yh02gF882s&quot; + &quot;d440aed189a13ff970dac7e7e8f987b2&quot;);
+         = &quot;cb398c7d06e7c34c342e3b8d36d0a0c9&quot;;
+</pre>
+Online MD5 Generator tersedia <a href="http://www.miraclesalad.com/webtools/md5.php">di sini</a>.
+	</td>
+</tr>
+<tr valign="top">
+	<td nowrap="nowrap">Response String</td>
+	<td>:</td>
+	<td><pre>{
+  &quot;Result&quot;:&lt;boolean&gt;,
+  &quot;SID&quot;:&lt;string&gt;
+}</pre>
+<p><strong>Keterangan:</strong></p>
+      <ul>
+        <li>Jika <code>Result</code> bernilai <code>True</code> maka <code>SID</code> akan berisi Session ID yang dapat dipakai untuk autentikasi di fungsi-fungsi berikutnya. 
+          Jika bernilai <code>False</code> maka <code>SID</code> akan berisi Error Message</li>
+        <li>Session ID akan expire jika dalam waktu 30 menit tidak ada aktivitas.</li>
+      </ul>    </td>
+</tr>
+<tr valign="top">
+	<td nowrap="nowrap">Catatan</td>
+    <td>:</td>
+    <td>Awali sesi dengan  fungsi <code>SignIn</code> jika berikutnya akan memanggil fungsi-fungsi melalui RPC dengan mengikutsertakan SID sebagai parameter.
+    <p>Jika fungsi RPC yang akan dipanggil hanya satu saja dan realtif jarang-jarang, <code>SignIn</code> tidak diperlukan karena fungsi-fungsi yang tersedia untuk RPC mendukung <code>LoginInfo</code> sebagai parameter pengganti <code>SID</code>.</p></td>
+</tr>    
+<tr valign="top">
+  <td colspan="3"><hr noshade="noshade" size="1" color="#FF6666"/><a name="fn_SignOut"></a><h2>fungsi SignOut()</h2></td>
+</tr>
+<tr valign="top">
+	<td>Kegunaan</td>
+	<td>:</td>
+	<td>Mengakhiri sesi transaksi data dan logged out dari server
+</tr>
+<tr valign="top">
+	<td>PathInfo</td>
+	<td>:</td>
+	<td><code>/SignOut</code></p>
+</tr>
+<tr valign="top">
+	<td>Request Method</td>
+ 	<td>:</td>
+	<td><code>POST</code></td>
+</tr>
+<tr valign="top">
+	<td>Request Content Type</td>
+	<td>:</td>
+	<td><code>application/json</code></td>
+</tr>
+<tr valign="top">
+	<td>Request String</td>
+  	<td>:</td>
+	<td><pre>{
+  "SID":&lt;string&gt;
+}</pre></td>
+</tr>
+<tr valign="top">
+  <td>Response String</td>
+  <td>:</td>
+  <td><pre>{
+  &quot;Result&quot;:&lt;boolean,
+  &quot;Remark&quot;:&lt;string&gt;
+}</pre></td>
+</tr>
+<tr valign="top">
+	<td nowrap="nowrap">Catatan</td>
+    <td>:</td>
+    <td>Akhiri sesi dengan  fungsi <code>SignOut</code> jika sebelumnya diawali dengan fungsi <code>SignIn</code> untuk secara eksplisit menghapus sesi user pada server.
+<p>Jika fungsi-fungsi RPC dipanggil menggunakan parameter <code>LoginInfo</code> (tanpa <code>SID</code> yang didapat dari <code>SignIn</code>) maka fungsi <code>SignOut</code> tidak perlu dijalankan.</p></td>
+</tr>
+<tr valign="top">
+  <td colspan="3"><h1 class="title"><br />Fungsi-Fungsi Blokir Request Kendaraan Baru</h1><a href="#fn_RanRuRequestBlokir">RanRuRequestBlokir</a>, <a href="#fn_RanRuGetBlokirEntryByDate">RanRuGetBlokirEntryByDate</a>, <a href="#fn_RanRuGetBlokirEntryByNoKa">RanRuGetBlokirEntryByNoKa</a></td>
+<tr valign="top">
+  <td colspan="3"><hr noshade="noshade" size="1" color="#FF6666"/><a name="fn_RanRuRequestBlokir"></a><h2>fungsi RanRuRequestBlokir()</h2></td>
+</tr>
+<tr valign="top">
+	<td>Kegunaan</td>
+	<td>:</td>
+	<td>Mendaftarkan kendaraan-kendaraan baru berdasarkan list nomor rangka untuk otomatis diblokir saat BPKBnya diproses.
+</tr>
+<tr valign="top">
+	<td>PathInfo</td>
+	<td>:</td>
+	<td><code>/RanRuRequestBlokir</code></p>
+</tr>
+<tr valign="top">
+	<td>Request Method</td>
+ 	<td>:</td>
+	<td><code>POST</code></td>
+</tr>
+<tr valign="top">
+	<td>Request Content Type</td>
+	<td>:</td>
+	<td><code>application/json</code></td>
+</tr>
+<tr valign="top">
+	<td>Request String</td>
+  	<td>:</td>
+	<td><pre>{
+  &quot;SID&quot;:&lt;string&gt;,
+  &quot;RequestBlokirItemList&quot;:
+  [
+    {
+      &quot;NoRangka&quot;:&lt;string&gt;,
+      &quot;NoPermohonan&quot;:&lt;string&gt;
+    },
+    .
+    .
+    .
+  ]
+}</pre>
+atau jika tanpa Session ID
+  <pre>{
+  &quot;LoginInfo&quot;:
+  {
+    &quot;LoginName&quot;:&lt;string&gt;,
+    &quot;Salt&quot;:&lt;string&gt;,
+    &quot;AuthHash&quot;:&lt;string&gt;
+  }
+  &quot;RequestBlokirItemList&quot;:
+  [
+    {
+      &quot;NoRangka&quot;:&lt;string&gt;,
+      &quot;NoPermohonan&quot;:&lt;string&gt;
+    },
+    .
+    .
+    .
+  ]
+}</pre></td>
+</tr>
+<tr valign="top">
+  <td>Response String</td>
+  <td>:</td>
+  <td><pre>{
+  &quot;Result&quot;:&lt;boolean&gt;,
+  &quot;ResponseBlokirItemList&quot;:
+  [
+    {
+      &quot;NoRangka&quot;:&lt;string&gt;,
+      &quot;KodeError&quot;:&lt;int&gt;  /* 1 = record sudah ada;                              *
+                          * 2 = BPKB sudah diblokir                            */
+                          * 3 = BPKB dengan nomor rangka ybs sudah diterbitkan */
+    },
+    .
+    .
+    .
+  ]
+}</pre>
+<p><strong>Keterangan:</strong></p>
+<ul>
+  <li>Jika nilai <code>Result = true</code>,  seluruh data diterima tanpa error. Array <code>ResponseBlokirItemList</code> akan tidak ada atau berupa empty array. Jika <code>false</code>, maka ada 1 atau lebih record yang ditolak, array <code>ResponseBlokirItemList</code> berisi info record-record tsb.</li>
+  <li>Elemen array <code>ResponseBlokirItemList</code> memiliki field sbb:<br />
+    - <code>NoRangka</code>: nomor rangka yang ditolak<br />
+    - <code>KodeError</code>:<br />
+    1 = record sudah ada;<br />
+    2 = BPKB sudah diblokir;<br />
+    3 = BPKB dengan nomor rangka ybs sudah diterbitkan </li>
+</ul>  </td>
+</tr>
+<tr valign="top">
+  <td colspan="3"><hr noshade="noshade" size="1" color="#FF6666"/><a name="fn_RanRuGetBlokirEntryByDate"></a><h2>fungsi RanRuGetBlokirEntryByDate()</h2></td>
+</tr>
+<tr valign="top">
+	<td>Kegunaan</td>
+	<td>:</td>
+	<td>Mengambil list data request blokir  yang pernah dikirim berdasarkan rentang waktu</tr>
+<tr valign="top">
+	<td>PathInfo</td>
+	<td>:</td>
+	<td><code>/RanRuGetBlokirEntryByDate</code></p>
+</tr>
+<tr valign="top">
+	<td>Request Method</td>
+ 	<td>:</td>
+	<td><code>POST</code></td>
+</tr>
+<tr valign="top">
+	<td>Request Content Type</td>
+	<td>:</td>
+	<td><code>application/json</code></td>
+</tr>
+<tr valign="top">
+  <td>Request String</td>
+  <td>:</td>
+  <td><pre>{
+  &quot;SID&quot;:&lt;string&gt;,
+  &quot;FromDate&quot;:&lt;string&gt;, <span class="comment">/* yyyymmdd */</span>
+  &quot;ToDate&quot;:&lt;string&gt;    <span class="comment">/* yyyymmdd */</span>
+}</pre>
+<p>atau jika tanpa Session ID</p>
+<pre>{
+  &quot;LoginInfo&quot;:
+  {
+    &quot;LoginName&quot;:&lt;string&gt;,
+    &quot;AuthHash&quot;:&lt;string&gt;,
+    &quot;Salt&quot;:&lt;string&gt;
+  },
+  &quot;FromDate&quot;:&lt;string&gt;,   <span class="comment">/* yyyymmdd */</span>
+  &quot;ToDate&quot;:&lt;string&gt;      <span class="comment">/* yyyymmdd */</span>
+}</pre></td>
+</tr>
+<tr valign="top">
+  <td><a name="rs_fn3"></a>Response String</td>
+  <td>:</td>
+  <td><pre>{
+  &quot;Result&quot;:&lt;boolean&gt;,
+  &quot;RequestBlokirEntryList&quot;:
+  [
+    {
+      &quot;NoRangka&quot;:&lt;string&gt;,
+      &quot;NoBpkb&quot;:&lt;string&gt;,
+      &quot;NoBlokir&quot;:&lt;string&gt;,
+      &quot;TglBlokir&quot;:&lt;string&gt;,   <span class="comment">/* yyyymmdd */</span>
+      &quot;TglSubmit&quot;:&lt;string&gt;,   <span class="comment">/* yyyymmddhhnnss */</span>
+      &quot;TglBpkb&quot;:&lt;string&gt;,
+      &quot;NoPolisi&quot;:&lt;string&gt;
+    },
+    .
+    .
+    .
+  ]
+}</pre>
+    <p><strong>Keterangan:</strong></p>
+    <ul>
+      <li>Nilai dari <code>Result</code> selalu <code>true</code>.</li>
+      <li>Jika hasil query tidak menghasilkan data, maka <code>RequestBlokirEntryList</code> akan tidak ada atau berupa empty array.</li>
+      <li>Jika request blokir belum diproses, field-field yang berisi hanya <code>NoRangka</code> dan <code>TglSubmit</code>.</li>
+    </ul>    </td>
+</tr>
+<tr valign="top">
+  <td colspan="3"><hr noshade="noshade" size="1" color="#FF6666"/><a name="fn_RanRuGetBlokirEntryByNoKa"></a><h2>fungsi RanRuGetBlokirEntryByNoKa()</h2></td>
+</tr>
+<tr valign="top">
+	<td>Kegunaan</td>
+	<td>:</td>
+	<td>Mengambil list data request blokir  yang pernah dikirim berdasarkan list nomor rangka
+</tr>
+<tr valign="top">
+	<td>PathInfo</td>
+	<td>:</td>
+	<td><code>/RanRuGetBlokirEntryByNoKa</code></p>
+</tr>
+<tr valign="top">
+	<td>Request Method</td>
+ 	<td>:</td>
+	<td><code>POST</code></td>
+</tr>
+<tr valign="top">
+	<td>Request Content Type</td>
+	<td>:</td>
+	<td><code>application/json</code></td>
+</tr>
+<tr valign="top">
+  <td>Request String</td>
+  <td>:</td>
+  <td><pre>{
+  &quot;SID&quot;:&lt;string&gt;,
+  &quot;NoRangkaList&quot;:
+  [
+     &lt;string&gt;,
+     &lt;string&gt;,
+     .
+     .
+     .
+     &lt;string&gt;
+  ]
+}</pre>
+<p>atau jika tanpa Session ID</p>
+<pre>{
+  &quot;LoginInfo&quot;:
+  {
+    &quot;LoginName&quot;:&lt;string&gt;,
+    &quot;Salt&quot;:&lt;string&gt;,
+    &quot;AuthHash&quot;:&lt;string&gt;
+  },
+  &quot;NoRangkaList&quot;:
+  [
+     &lt;string&gt;,
+     &lt;string&gt;,
+     .
+     .
+     .
+     &lt;string&gt;
+  ]
+}</pre></td>
+</tr>
+<tr valign="top">
+  <td>Response String</td>
+  <td>:</td>
+  <td>Lihat <a href="#rs_fn3">Response String pada fugsi RanRuGetBlokirEntryByDate()</a></td>
+</tr>
+<tr valign="top">
+  <td colspan="3"><h1 class="title"><br />Fungsi-Fungsi Blokir Request Kendaraan Lama</h1><a href="#fn_RanMaGetDataRanmor">RanMaGetDataRanmor</a>, <a href="#fn_RanMaVerifiedForBlokir">RanMaVerifiedForBlokir</a>, <a href="#fn_RanMaExecuteBlokir">RanMaExecuteBlokir</a></td>
+<tr valign="top">
+  <td colspan="3"><hr noshade="noshade" size="1" color="#FF6666"/><a name="fn_RanMaGetDataRanmor"></a><h2>fungsi RanMaGetDataRanmor()</h2></td>
+</tr>
+<tr valign="top">
+	<td>Kegunaan</td>
+	<td>:</td>
+	<td>Mengambil data ranmor untuk diverifikasi</p>
+</tr>
+<tr valign="top">
+	<td>PathInfo</td>
+	<td>:</td>
+	<td><code>/RanMaGetDataRanmor</code></p>
+</tr>
+<tr valign="top">
+	<td>Request Method</td>
+ 	<td>:</td>
+	<td><code>POST</code></td>
+</tr>
+<tr valign="top">
+	<td>Request Content Type</td>
+	<td>:</td>
+	<td><code>application/json</code></td>
+</tr>
+<tr valign="top">
+  <td>Request String</td>
+  <td>:</td>
+  <td><pre>{
+  &quot;SID&quot;:&lt;string&gt;,
+  &quot;NoBPKB&quot;:&lt;string&gt;
+}</pre>
+atau jika tanpa Session ID
+<pre>{
+  &quot;LoginInfo&quot;:
+  {
+    &quot;LoginName&quot;:&lt;string&gt;,
+    &quot;Salt&quot;:&lt;string&gt;,
+    &quot;AuthHash&quot;:&lt;string&gt;
+  },
+  &quot;NoBPKB&quot;:&lt;string&gt;
+}</pre>
+  </td>
+</tr>
+<tr valign="top">
+	<td>Response String</td>
+    <td>:</td>
+    <td><pre>{
+  &quot;Result&quot;:&lt;boolean&gt;,
+  &quot;DataRanmor&quot;:
+  {
+    &quot;NoBPKB&quot;:&lt;string&gt;,
+    &quot;TglBPKB&quot;:&lt;string&gt;, <span class="comment">/* yyyymmdd */</span>
+    &quot;NoRegister&quot;:&lt;string&gt;
+    &quot;TempatPenerbitan&quot;:&lt;string&gt;,
+    &quot;NoPolisi&quot;:&lt;string&gt;,
+    &quot;WarnaTNKB&quot;:&lt;string&gt;,
+    &quot;NoRangka&quot;:&lt;string&gt;,
+    &quot;NoMesin&quot;:&lt;string&gt;,
+    &quot;Merk&quot;:&lt;string&gt;,
+    &quot;Tipe&quot;:&lt;string&gt;,
+    &quot;Jenis&quot;:&lt;string&gt;,
+    &quot;Model&quot;:&lt;string&gt;,
+    &quot;JumlahRoda&quot;:&lt;int&gt;,
+    &quot;JumlahSumbu&quot;:&lt;int&gt;,
+    &quot;ThnBuat&quot;:&lt;int&gt;,
+    &quot;ThnRakit&quot;:&lt;int&gt;,
+    &quot;VolSilinder&quot;:&lt;int&gt;,
+    &quot;BahanBakar&quot;:&lt;string&gt;,
+    &quot;Warna&quot;:&lt;string&gt;,
+    &quot;NamaPemilik&quot;:&lt;string&gt;,
+    &quot;NoIdentitas&quot;:&lt;string&gt;,
+    &quot;Pekerjaan&quot;:&lt;string&gt;,
+    &quot;Alamat&quot;:&lt;string&gt;,
+    &quot;KodePos&quot;:&lt;string&gt;,
+    &quot;WilayahSamsat&quot;:&lt;string&gt;,
+    &quot;NoFaktur&quot;:&lt;string&gt;,
+    &quot;TglFaktur&quot;:&lt;string&gt;, <span class="comment">/* yyyymmdd */</span>
+    &quot;Peruntukan&quot;:&lt;string&gt;,
+    &quot;JenisDaftaran&quot;:&lt;string&gt;,
+    &quot;NoPabean&quot;:&lt;string&gt;,
+    &quot;TglPabean&quot;:&lt;string&gt;, <span class="comment">/* yyyymmdd */</span>
+    &quot;Pelabuhan&quot;:&lt;string&gt;,
+    &quot;CaraImpor&quot;:&lt;string&gt;,
+    &quot;NoCKD&quot;:&lt;string&gt;,
+    &quot;KeteranganPabean&quot;:&lt;string&gt;,
+    &quot;Status&quot;:&lt;string&gt;,
+    &quot;KeteranganStatus&quot;:&lt;string&gt;,
+    &quot;Pemohon&quot;:&lt;string&gt;&quot;,
+    &quot;BpkbSebelumnya&quot;:
+    {
+      &quot;NoBPKB&quot;:&lt;string&gt;,
+      &quot;TglBPKB&quot;:&lt;string&gt;, <span class="comment">/* yyyymmdd */</span>
+      &quot;NoRegister&quot;:&lt;string&gt;
+      &quot;TempatPenerbitan&quot;:&lt;string&gt;,
+      &quot;NamaPemilik&quot;:&lt;string&gt;,
+      &quot;Alamat&quot;:&lt;string&gt;,
+      &quot;SebabTidakBerlaku&quot;:&lt;string&gt;
+    }
+  }
+}</pre><p><strong>Keterangan:</strong></p>
+    <ul>
+      <li>Jika nilai <code>Result = true</code>, maka obyek <code>DataRanmor</code> akan berisi, jika <code>false</code> maka <code>DataRanmor</code> akan tidak ada atau berisi obyek kosong.</li>
+      <li>Obyek <code>BpkbSebelumnya</code> hanya akan ada/berisi jika data ranmor memiliki buku BPKB pendahulu.</li>
+    </ul>    </td>
+</tr>
+<tr valign="top">
+  <td colspan="3"><hr noshade="noshade" size="1" color="#FF6666"/><a name="fn_RanMaVerifiedForBlokir"></a><h2>fungsi RanMaVerifiedForBlokir()</h2></td>
+</tr>
+<tr valign="top">
+	<td>Kegunaan</td>
+	<td>:</td>
+	<td>Menyatakan ranmor telah diverifikasi
+	  dan disetujui untuk diblokir. Data yang dikirim ke server akan mendapatkan ID Approval.
+</tr>
+<tr valign="top">
+	<td>PathInfo</td>
+	<td>:</td>
+	<td><code>/RanMaVerifiedForBlokir</code></p>
+</tr>
+<tr valign="top">
+	<td>Request Method</td>
+ 	<td>:</td>
+	<td><code>POST</code></td>
+</tr>
+<tr valign="top">
+	<td>Request Content Type</td>
+	<td>:</td>
+	<td><code>application/json</code></td>
+</tr>
+<tr valign="top">
+  <td>Request String</td>
+  <td>:</td>
+  <td><pre>{
+  &quot;SID&quot;:&lt;string&gt;,
+  &quot;NoBPKB&quot;:&lt;string&gt;
+}</pre>
+atau jika tanpa Session ID
+<pre>{
+  &quot;LoginInfo&quot;:
+  {
+    &quot;LoginName&quot;:&lt;string&gt;,
+    &quot;Salt&quot;:&lt;string&gt;,
+    &quot;AuthHash&quot;:&lt;string&gt;
+  },
+  &quot;NoBPKB&quot;:&lt;string&gt;
+}</pre>
+  </td>
+</tr>
+<tr valign="top">
+  <td>Response String</td>
+  <td>:</td>
+  <td><pre>{
+  &quot;Result&quot;:&lt;boolean&gt;,
+  &quot;NoBPKB&quot;:&lt;string&gt;,
+  &quot;KodeError&quot;:&lt;int&gt;,     /<span class="comment">* 0: no error;
+                            1: BPKB not found;
+                            2: already verified;
+                            3: already blokir-ed */</span>
+  &quot;IdApproval&quot;:&lt;int&gt;
+}</pre>
+    <p><strong>Keterangan: </strong></p>
+    <ul>
+      <li>Jika <code>Result</code> bernilai <code>true</code>, maka <code>IdApproval</code> akan berisi integer value yang nantinya akan dipakai untuk identifikasi saat melakukan blokir secara online. Jika <code>false</code>, <code>IdApproval</code> akan bernilai <code>0</code>.</li>
+      <li><code>KodeError</code> dapat berisi nilai sbb:<br />
+        - <code>0</code>: tidak ada error <code>(Result = true</code>)<br />
+        - <code>1</code>: BPKB tidak ditemukan<br />
+        - <code>2</code>: verifikasi sudah pernah disubmit sebelumnya<br />
+        - <code>3</code>: BPKB telah diblokir </li>
+    </ul></td>
+</tr>
+<tr valign="top">
+  <td colspan="3"><hr noshade="noshade" size="1" color="#FF6666"/><a name="fn_RanMaExecuteBlokir"></a><h2>fungsi RanMaExecuteBlokir()</h2></td>
+</tr>
+<tr valign="top">
+	<td>Kegunaan</td>
+	<td>:</td>
+	<td>Mengeksekusi proses blokir secara remote.
+</tr>
+<tr valign="top">
+	<td>PathInfo</td>
+	<td>:</td>
+	<td><code>/RanMaExecuteBlokir</code></p>
+</tr>
+<tr valign="top">
+	<td>Request Method</td>
+ 	<td>:</td>
+	<td><code>POST</code></td>
+</tr>
+<tr valign="top">
+	<td>Request Content Type</td>
+	<td>:</td>
+	<td><code>application/json</code></td>
+</tr>
+<tr valign="top">
+  <td>Request String</td>
+  <td>:</td>
+  <td><pre>{
+  &quot;SID&quot;:&lt;string&gt;,
+  &quot;DataPermohonan&quot;:
+  {
+    &quot;NoBPKB&quot;:&lt;string&gt;,
+    &quot;NoPermohonan&quot;:&lt;string&gt;,
+    &quot;IdApproval&quot;:&lt;int&gt;
+  }
+}</pre>
+atau jika tanpa Session ID
+<pre>{
+  &quot;LoginInfo&quot;:
+  {
+    &quot;LoginName&quot;:&lt;string&gt;,
+    &quot;Salt&quot;:&lt;string&gt;,
+    &quot;AuthHash&quot;:&lt;string&gt;
+  },
+  &quot;DataPermohonan&quot;:
+  {
+    &quot;NoBPKB&quot;:&lt;string&gt;,
+    &quot;NoPermohonan&quot;:&lt;string&gt;,
+    &quot;IdApproval&quot;:&lt;int&gt;
+  }
+}</pre>
+  </td>
+</tr>
+<tr valign="top">
+  <td>Response String</td>
+  <td>:</td>
+  <td><pre>{
+  &quot;Result&quot;:&lt;boolean&gt;,
+  &quot;NoBPKB&quot;:&lt;string&gt;,
+  &quot;KodeError&quot;:&lt;int&gt;,     /<span class="comment">* 0: no error
+                            1: BPKB not found
+                            2: approval entry does not exist
+                            3: BPKB not match
+                            4: Pemohon don't match
+                            5: already blokired */</span>
+  &quot;BlokirData&quot;:
+  {
+    &quot;NoRegBlokir&quot;:&lt;string&gt;,
+    &quot;TglBlokir&quot;:&lt;string&gt;,         <span class="comment">/* yyyymmdd */</span>
+    &quot;TglAkhirBerlaku&quot;:&lt;string&gt;    <span class="comment">/* yyyymmdd */</span>
+  }
+}</pre>
+    <p><strong>Keterangan: </strong></p>
+    <ul>
+      <li>Jika <code>Result</code> bernilai <code>true</code>, maka <code>BlokirData</code> akan berisi informasi hasil pemblokiran. Jika <code>false</code>, <code>BlokirData</code> akan tidak ada atau berupa <em>empty object</em>..</li>
+      <li><code>KodeError</code> dapat berisi nilai sbb:<br />
+        - <code>0</code>: tidak ada error <code>(Result = true</code>)<br />
+        - <code>1</code>: BPKB tidak ditemukan<br />
+        - <code>2</code>: data tidak ditemukan dalam database verified request<br />
+        - <code>3</code>: BPKB yang disubmit saat verifikasi tidak sesuai dengan BPKB yang hendak diblokir<br />
+        - <code>4</code>: User yang melakukan verifikasi blokir
+      tidak sama dengan user yang melakukan blokir<br />
+      - <code>5</code>: BPKB statusnya telah diblokir </li>
+    </ul>
+  </td>
+</tr>
+<tr valign="top">
+  <td colspan="3"><h1><br />Catatan</h1>
+    <a href="#ct_exception">Exception</a>, <a href="#ct_sva">Server Access</a></td>
+<tr valign="top">
+  <td colspan="3"><hr noshade="noshade" size="1" color="#FF6666"/><a name="ct_exception"></a><h2>Exception</h2>
+<p>Setiap Response String yang merupakan kembalian dari fungsi RPC sebelum di-<em>unmarshalled</em> dan ditangani secara <em>normal flow</em> di caller, harus dipastikan bahwa bukan berupa <em>exception response message</em> dari server.</p>
+<p>Exception response dari server memiliki struktur sbb:</p>
+<pre>{
+  &quot;Status&quot;:&quot;Exception&quot;,
+  &quot;ExceptionClass&quot;:&lt;string&gt;,
+  &quot;IsSystemException&quot;:&lt;boolean&gt;,
+  &quot;Message&quot;:&lt;string&gt;
+}</pre>
+<p>Jika terdapat field dengan nama <code>&quot;Status&quot;</code> dengan value <code>&quot;Exception&quot;</code> maka caller harus menghandle exception dan tidak meneruskan <em>normal flow</em>.</p>
+<p>Keterangan exception object</p>
+<ul>
+  <li><code>Status</code>: string, selalu bernilai <code>&quot;Exception&quot;</code></li>
+  <li><code>ExceptionClass</code>: nama  <em>exception class</em> di server</li>
+  <li><code>IsSystemException</code>: boolean, jika <code>true</code> berarti exception adalah system exception yang diakibatkan misalnya masalah koneksi database, access violation, dsb. Jika false berarti application exception misalnya kesalahan format data, atau Session ID yang expired.</li>
+  <li><code>Message</code>: detail keterangan exception</li>
+</ul>
+  </td>
+</tr>
+<tr valign="top">
+  <td colspan="3"><hr noshade="noshade" size="1" color="#FF6666"/><a name="ct_sva"></a><h2>Server Access</h2>
+  <p>Alamat web service adalah <strong>http://service.poldametro.net/bro/browsj.dll</strong></p>
+  <p>Untuk tiap fungsi, URL yang dipergunakan ditentukan oleh PathInfo, dengan format:<br />
+    <code>http://poldametro.bpkb.net/Blokir-Online/browsj.dll<strong>&lt;path_info&gt;</strong></code></p>
+  <p>Misalnya untuk melakukan SignIn, dimana PathInfo adalah <code>/SignIn</code>, maka URL yang diakses adalah:<br />
+    <code>http://poldametro.bpkb.net/Blokir-Online/browsj.dll<strong>/SignIn</strong></code></p>
+  <p>Semua request method adalah <code>HTTP POST</code> dengan content-type = <code>application/json</code> dan JSON string request berada pada body request.</p>
+  </td>
+</tr>
+</table>
+
+<p style="font-size:small; font-style:italic;"><br />
+Doc Ver : 1.1</p>
+</body>
+</html>
